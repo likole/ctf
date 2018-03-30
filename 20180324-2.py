@@ -26,7 +26,7 @@ def solve(R):
         now.append(tmp)
     if(now==ans):print(c)
 
-# for i in range(2**21):
+for i in range(2**21):
 #     if(i%10000==0):print("++",i)
-#     solve(i)
+    solve(i)
 print(bin(1821289))

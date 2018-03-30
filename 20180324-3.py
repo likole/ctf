@@ -37,7 +37,9 @@ def test(R):
         if(tmp!=ans[i]): return
     print(bin(c))
 
-
+for i in range(2**21):
+    if(i%10000==0):print("++",i)
+    test(i)
 
 # f=open("key","ab")
 # for i in range(1024*1024):
@@ -47,6 +49,3 @@ def test(R):
 #         tmp=(tmp << 1)^out
 #     f.write(chr(tmp))
 # f.close()
-for i in range(2**21):
-    if(i%10000==0):print("++",i)
-    test(i)
